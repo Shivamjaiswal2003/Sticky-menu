@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky menu</title>
+</head>
+
+<style>
+    body{
+        margin: 0px;
+    }
+    #header{
+        text-align: center;
+        
+    }
+    #logo{
+        height: 250px;
+    }
+
+    #menu-bar{
+        text-align: center;
+        background-color: rgb(85, 158, 189);
+        height: 70px;
+        font-size: 30px;
+        
+    }
+
+    #menu-bar li{
+        display: inline-block;
+        padding: 18px 55px;
+    }
+
+    #container{
+        text-align: center;
+       
+        padding: 50px 50px;
+    }
+ 
+    #container p{
+        font-size: 20px;
+        text-align: justify;
+  
+    }
+    #pic{
+        width: 100%;
+    }
+
+    .sticky{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+</style>
+<body>
+    
+    <div id="header">
+        <img src="R.png" id="logo">
+    </div>
+
+    <nav id="menu-bar" >
+        <li>About us</li>
+        <li>Details</li>
+        <li>Projects</li>
+        <li>Contacts</li>
+    </nav>
+
+  
+    <div id="container">
+             <h1>About us</h1>
+             <img src="bg.jpeg" id="pic">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam perferendis sint facere, magnam asperiores corporis praesentium sequi quas blanditiis in minus fugit enim eligendi consequuntur nisi! Quas quod nisi cumque rem quo dignissimos aut nemo eveniet fuga. Tempora nobis laboriosam praesentium eaque, blanditiis ab, delectus asperiores nisi culpa voluptas iste vel consectetur sit temporibus voluptatibus eum consequuntur, officiis ipsum voluptatem quam mollitia esse repellendus. Aperiam nesciunt veritatis ipsa quod expedita porro sequi, saepe sint blanditiis, temporibus earum aut voluptate? Suscipit doloremque beatae eligendi? Nesciunt ad incidunt labore eaque dolores dolore. Aliquam, ea voluptates! Rem ullam libero, laboriosam porro eius minima cupiditate repellendus accusantium necessitatibus nemo aliquam sit sint praesentium doloremque perspiciatis mollitia explicabo, eos eaque temporibus. Dolorum velit maxime itaque excepturi iusto at suscipit fuga nisi. Aliquam libero quia blanditiis veritatis magni et repudiandae eius voluptatibus excepturi dolorem amet tempora voluptas earum debitis perferendis quisquam aliquid sapiente, enim, voluptatem sint numquam nulla consequatur eaque! Temporibus ducimus, nihil quis blanditiis officiis obcaecati dicta magnam porro molestiae, ea, nam tempora ullam neque. Laborum quaerat provident, libero quia ea odit dignissimos molestiae quibusdam obcaecati delectus minus dicta odio eveniet a voluptates repellat, maiores ducimus soluta tempore corporis suscipit officiis atque. Possimus laboriosam dolores fugiat dolor iste hic ipsam qui optio molestias, tenetur perspiciatis! Libero porro suscipit rem non itaque quod dolores. Laborum exercitationem nam nobis officia asperiores, praesentium cupiditate accusantium non! Tenetur dolore placeat dicta similique in totam reprehenderit amet dolores cumque nisi asperiores, earum ratione quidem provident dignissimos facilis. Doloremque, ut! Dicta expedita veritatis consectetur temporibus corporis, excepturi minima quam nobis ullam sed doloremque cum harum pariatur? Laborum sunt eius, ullam facilis magnam assumenda soluta quod quae. Optio ab ipsam porro earum magni cum placeat excepturi dicta, ducimus sapiente soluta, explicabo aspernatur deleniti impedit dolorem maiores iure libero quos autem, non nisi vero voluptates aperiam. Suscipit architecto voluptate, consectetur qui fugit ratione provident. Non beatae sunt numquam repudiandae possimus obcaecati ipsum expedita facere natus! Placeat repudiandae commodi consequuntur deserunt aperiam temporibus earum perspiciatis explicabo repellat iure ipsa nostrum ea dolorem vitae distinctio animi, sint, quibusdam aspernatur. Unde porro ipsam corrupti beatae, sit inventore ipsum consectetur aperiam iusto recusandae asperiores quibusdam, rerum eveniet quo quisquam nihil sequi nam repellat et! Rerum aperiam et harum, eligendi ad aliquam commodi quo dolorum nemo culpa! Cupiditate odio, numquam unde explicabo accusamus quidem, nostrum nesciunt voluptatem voluptatibus perferendis illo et molestiae adipisci rem ipsum veniam omnis eum fugit. Harum natus quam corporis sunt libero! Impedit molestias aliquam enim repellat atque, asperiores magni perferendis sapiente perspiciatis obcaecati rem explicabo accusantium. Error vitae blanditiis rerum sit libero in laborum, officiis odit, quisquam autem reprehenderit consequatur perspiciatis. Consequuntur neque laudantium necessitatibus omnis iusto repellat rerum assumenda hic mollitia dignissimos, repellendus error quaerat cumque autem cum quae beatae. Placeat odio eveniet, aut accusamus error nam dignissimos laboriosam odit, deserunt ratione praesentium? Voluptas, ullam dolores tempore expedita nihil doloribus nam quibusdam minus quia quae unde ab enim maiores dolorem voluptate, sunt perspiciatis repudiandae laboriosam quod, optio atque? Labore adipisci sint deserunt!</p>
+    </div>
+
+    <script>
+        let navbar = document.getElementById("menu-bar");
+        document.addEventListener("scroll", function(){
+            if(pageYOffset>=254){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        })
+    </script>
+    
+</body>
+</html>
